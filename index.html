@@ -1,96 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8">
-    <title>fail</title>
-  </head>
-  <body>
-    <form action="/my-handling-form-page" method="post">
-      <div>
-        <label for="name"> Name:</label>
-        <input type="text" id="name" name="user_name">
-      </div>
-      <div>
-        <label for="mail"> Email:</label>
-        <input type="email" id="mail" name="user_mail">
-      </div>
-      <div>
-        <label for="msg"> Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
-      </div>
-      <div>
-        <label for="search"> Password:</label>
-        <input type="search" id="search" name="search">
-      </div>
-      <select id="simple" name="simple">
-        <option>one</option>
-          <option>two</option>
-          <option>three</option>
-        </select>
-        <select id="groups" name="groups">
-          <optgroup label="numbers">
-            <option selected>one</option>
-              <option>two</option>
-              <option>three</option>
-            </optgroup>
-            <optgroup label="doremi">
-              <option>do</option>
-                <option>re</option>
-                <option>mi</option>
-              </optgroup>
-            </select>
+    <title>Payment form example</title>
+    <link href="payment-form.css" rel="stylesheet">
+</head>
+
+<body>
+  <form action="https://formspree.io/liucija.masaityte@gmail.com" method="post">
 
 
-            <label for="groups"> pasirinkite </label>
-            <input type="radio" checked id="soup" name="meal">
-              <option>one</option>
-                <option>two</option>
-                <option>three</option>
+  <h1> Payment form </h1>
+<p> Required fields are followed by * </p>
+<h2> Contact information </h2>
 
-              <label for="groups"> ddd</label>
-            <input type="checkbox" checked id="soup" name="meal">
-              <option>one</option>
-                <option>two</option>
-                <option>three</option>
-<br>
 <div>
-  <label for="age">select</label>
-  <input type="number" name="age" id="age" min="1" max="15" step="2">
+  <fieldset title="title">
+    <legend> Title </legend>
+    <input type="radio" name="sex"> Mister
+    <br>
+    <input type="radio" name="sex"> Miss
+  </fieldset>
 </div>
-<br>
 <div>
-  <input type="password" id="psw" name="pwd">
+  <label for="username"> Name *</label>
+  <input type="text" name="username">
 </div>
-<br>
 <div>
-  <label for="month"> select </label>
-  <input type="month" name="month" id="month">
+  <label for="email"> Email *</label>
+  <input type="email" id="email" name="user_mail" >
 </div>
-<br>
 <div>
-  <label for="time"> select </label>
-  <input type="time" name="time" id="time">
+  <label for="psw"> Password *</label>
+  <input type="password" id="psw" name="psw" >
 </div>
-<br>
+<h2> Payment information </h2>
 <div>
-  <label for="color"> select color</label>
-  <input type="color" name="color" id="color">
-</div>
-<br>
-<div>
-  <label for="file"> upload </label>
-  <input type="file" name="file" id="file" accept="image/jpeg" multiple>
-</div>
-<br>
-<div class="button">
-  <button type="submit"> don't push </button>
-</div>
-<br>
-<section>
-  <p> <button disabled="true" required type="submit"> validate </button> <p>
-  </section>
+  <label for="payment"> Card type: </label>
+  <select id="simple" name="simple">
+    <option selected> Visa </option>
+    <option> MasterCard </option>
+    <option> kazkas dar </option>
+  </select>
+  <br>
+  <br>
+  <div>
+    <label for="card"> Card number * </label>
+    <input type="text" name="Card">
+  </div>
+  <div>
+    <label for="exp"> Expiration date *</label>
+    <input type="text" id="exp" name="user_mail" >
+  </div>
+  <p> <i> Formatted as mm/yy </i> </p>
+  <div class="button">
+    <button type="submit"> Validate the payment </button>
 
+</body>
 
-    </form>
-  </body>
 </html>
