@@ -29,8 +29,8 @@
         </select>
         <select id="groups" name="groups">
           <optgroup label="numbers">
-            <option>one</option>
-              <option selected>two</option>
+            <option selected>one</option>
+              <option>two</option>
               <option>three</option>
             </optgroup>
             <optgroup label="doremi">
@@ -39,6 +39,58 @@
                 <option>mi</option>
               </optgroup>
             </select>
+
+
+            <label for="groups"> pasirinkite </label>
+            <input type="radio" checked id="soup" name="meal">
+              <option>one</option>
+                <option>two</option>
+                <option>three</option>
+
+              <label for="groups"> ddd</label>
+            <input type="checkbox" checked id="soup" name="meal">
+              <option>one</option>
+                <option>two</option>
+                <option>three</option>
+<br>
+<div>
+  <label for="age">select</label>
+  <input type="number" name="age" id="age" min="1" max="15" step="2">
+</div>
+<br>
+<div>
+  <input type="password" id="psw" name="pwd">
+</div>
+<br>
+<div>
+  <label for="month"> select </label>
+  <input type="month" name="month" id="month">
+</div>
+<br>
+<div>
+  <label for="time"> select </label>
+  <input type="time" name="time" id="time">
+</div>
+<br>
+<div>
+  <label for="color"> select color</label>
+  <input type="color" name="color" id="color">
+</div>
+<br>
+<div>
+  <label for="file"> upload </label>
+  <input type="file" name="file" id="file" accept="image/jpeg" multiple>
+</div>
+<br>
+<div class="button">
+  <button type="submit"> don't push </button>
+</div>
+<br>
+<section>
+  <p> <button disabled="true" required type="submit"> validate </button> <p>
+  </section>
+
+
     </form>
   </body>
 </html>
